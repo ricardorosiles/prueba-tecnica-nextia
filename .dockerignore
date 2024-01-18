@@ -1,0 +1,9 @@
+README.md
+.vscode
+.git
+.gitlab-ci.yml
+.gitignore
+manifests
+.nvmrc
+*.env
+.env

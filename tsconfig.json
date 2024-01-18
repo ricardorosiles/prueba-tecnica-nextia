@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "module": "commonjs",
+    "noEmit": false,
+    "declaration": false,
+    "esModuleInterop": true
+  },
+  "include": ["src"],
+  "exclude": ["src/**/*.test.ts", "dist/", "src/testing/", "src/**/*.spec.ts", "database"]
+}

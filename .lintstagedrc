@@ -1,0 +1,5 @@
+{
+    "src/**/*.ts": "eslint",
+    "database/**/*.ts": "eslint",
+    "scripts/**/*.js": "eslint"
+}

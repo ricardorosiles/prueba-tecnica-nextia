@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "outDir": "../migrations-dist",
+    "module": "commonjs",
+    "noEmit": false,
+    "declaration": false,
+    "sourceMap": false,
+    "target": "ES2022",
+    "esModuleInterop": true
+
+  },
+  "include": ["**/*.ts"]
+}

@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "module": "commonjs",
+    "noEmit": true,
+    "declaration": false
+  },
+  "include": ["src", "database"],
+  "exclude": ["dist/"]
+}

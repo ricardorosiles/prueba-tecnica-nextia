@@ -1,0 +1,36 @@
+/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
+module.exports = {
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+  moduleFileExtensions: ['ts', 'js'],
+  collectCoverage: true,
+  testPathIgnorePatterns: ['src/integrations/', 'dist'],
+  collectCoverageFrom: [
+    'src/**/*.{js,ts}',
+    '!<rootDir>/node_modules/',
+    '!src/index.ts',
+    '!src/router.ts',
+    '!src/routes/*.ts',
+    '!src/helpers/logger.ts',
+    '!src/helpers/configEnvironment.ts',
+    '!src/helpers/validator.ts',
+    '!src/database.ts',
+    '!src/models/*.ts',
+    '!src/validators/*.ts',
+    '!src/constants/**/*.ts',
+    '!src/services/**/*.ts',
+    '!src/associations/**/*.ts',
+    '!src/providers/**/*.ts',
+    '!src/middlewares/checkApiKeyAuthOrFirebaseAuth.ts',
+    '!src/controllers/auth/token.ts',
+    'src/services/user/**/*.ts',
+  ],
+  coverageThreshold: {
+    global: {
+      lines: 90,
+      statements: 90,
+      branches: 90,
+      functions: 90,
+    },
+  },
+};

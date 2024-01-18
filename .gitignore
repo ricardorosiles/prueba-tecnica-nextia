@@ -1,0 +1,9 @@
+node_modules
+package-lock.json
+coverage
+dist
+*.env
+.env
+logs
+.DS_Store
+/migrations-dist

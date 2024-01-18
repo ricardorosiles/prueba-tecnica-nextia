@@ -1,0 +1,14 @@
+const path = require("path");
+
+const { MIG_ENV } = process.env;
+let OUTPUT_DIR = "migrations-dist";
+
+if (MIG_ENV) {
+  OUTPUT_DIR = "database";
+}
+
+module.exports = {
+  config: path.resolve(OUTPUT_DIR, "config.js"),
+  "seeders-path": path.resolve(OUTPUT_DIR, "seeders"),
+  "migrations-path": path.resolve(OUTPUT_DIR, "migrations"),
+};
