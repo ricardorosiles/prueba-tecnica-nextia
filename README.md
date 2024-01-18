@@ -100,6 +100,67 @@ $ yarn migration:all
 $ yarn migration:undo
 ```
 
+## ENDPOINTS
+
+```bash
+POST = http://localhost:9000/v1/auth/sign-up/email
+
+EXAMPLE BODY
+{
+    "name":"ricardo",
+    "last_name":"rosiles",
+    "email":"ricardo.rosiles@gmail.com",
+    "password":"Password1@",
+    "department_number":"123456"
+}
+
+
+POST = http://localhost:9000/v1/auth/token
+
+{
+    "email":"ricardo.rosiles1@gmail.com",
+    "password":"Password1@"
+}
+
+PATCH = http://localhost:9000/v1/auth/recovery-password
+
+{
+    "email":"ricardo.rosiles08@gmail.com",
+    "password":"Password1."
+}
+
+
+=================================================================================
+
+SE TENDRA QUE REALIZAR UN LOGIN PARA PODER EJECUTAR EL ENDPOINT YA QUE ESTA PROTEGIDO
+
+1.- Abrir Postman
+2.- Dirigirse al apartado de Authorization
+3.- Seleccionar el type que es Bearer Token
+4.- Colocar Token del login previo
+
+=================================================================================
+
+POST = http://localhost:9000/v1/invitation
+
+{
+    "name":"Tst",
+    "invitation_time":"",
+    "invitation_expiration_date":"",
+    "description":""
+}
+GET = http://localhost:9000/v1/invitation/:id
+
+GET = http://localhost:9000/v1/invitation
+
+PUT = http://localhost:9000/v1/invitation
+
+DELETE = http://localhost:9000/v1/invitation/:id
+
+=================================================================================
+
+```
+
 ---
 
 # Editing this README
